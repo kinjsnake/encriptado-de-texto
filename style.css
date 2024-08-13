@@ -183,7 +183,7 @@ footer {
 .links{
 	width: 30px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 65% auto;
@@ -238,7 +238,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 230px) {
+@media screen and (max-width: 375px) {
     .boton-encriptar, .boton-desencriptar, .boton-copiar {
         width: 100%;
         min-width: 100%;
