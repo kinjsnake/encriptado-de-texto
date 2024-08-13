@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de textos</title>
+    <link rel="icon" href="./imagenes-primer-desafio-alura/iconopagina.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes-primer-desafio-alura/iconopagina.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <img class="Logo" src="./imagenes-primer-desafio-alura/Logoalura.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="derecha">
+                <textarea class="text-area" id="inputText" placeholder="Ingrese texto aquí..." oninput="ajustarAltura(this)"></textarea>
+                
+                <div class="contenido-entrada">
+                    <div class="informacion">
+                        <img src="./imagenes-primer-desafio-alura/alert.png" alt="Información de escritura"> 
+                        <span>Solo letras minúsculas y sin acentos</span>
+                    </div>
+
+                    <div class="botones">
+                        <button class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <aside class="resultado">
+                <textarea class="text-area-resultado-no-imagen" id="outputText" placeholder="" readonly></textarea>
+                <div class="resultado-info">
+                    <img class="muñeco" src="./imagenes-primer-desafio-alura/Muñeco.png" alt="muñeco">
+                    <h3 class="mensaje-no-encontrado">Ningun mensaje fue encontrado.</h3>
+                    <p class="texto-no-encontrado">Ingrese texto por favor</p>
+                </div>
+                
+                <button class="boton-copiar oculto" id="botonCopiar" onclick="copiarTexto()">Copiar Texto</button>
+            </aside>
+            <footer class="footer">
+                
+                <A class="usuario" href="https://github.com/kinjsnake" target="_blank">
+                    @kinjsnake
+                </A>
+                <A class="usuario" href="https://github.com/kinjsnake" target="_blank">
+                    <img class="links" src="./imagenes-primer-desafio-alura/icon github.png">
+                </A>
+                
+            
+            </footer>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
